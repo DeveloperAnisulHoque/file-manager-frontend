@@ -60,30 +60,22 @@ const page = () => {
         </div>
       )}
       <div className="max-h-full overflow-y-auto w-full   grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8  xl:grid-cols-10   2xl:grid-cols-12 gap-2 p-4 pb-40">
-        {[...Array(5)].map(() => (
-          <div className="px-3   h-fit      ">
-            <HiFolder className="w-full h-auto   text-slate-200 animate-pulse " />
-            <span className="text-sm text-slate-200 font-semibold px-2 ">
-              loading
-            </span>
-          </div>
-        ))}
-        {[...Array(5)].map(() => (
+        {[...Array(1)].map(() => (
           <div className="px-3   py-1 hover:bg-slate-50 h-fit rounded-md  duration-150  relative group">
             <FcFolder className="w-full h-auto  " />
             <span className="text-sm text-slate-500 font-semibold px-2">
-              Cv
+              New folder
             </span>
             <button className="absolute top-2 right-2 hidden group-hover:block">
               <BsThreeDots />
             </button>
           </div>
         ))}
-        {[...Array(5)].map(() => (
+        {[...Array(1)].map(() => (
           <div className="px-3   py-1 hover:bg-slate-50 h-fit rounded-md  duration-150  relative group">
             <MdFolderZip className="w-full h-auto  text-slate-600 " />
             <span className="text-sm text-slate-500 font-semibold px-2">
-              Cv
+              theme.zip
             </span>
             <button className="absolute top-2 right-2 hidden group-hover:block">
               <BsThreeDots />
@@ -94,33 +86,41 @@ const page = () => {
           <div className="px-3   py-1 hover:bg-slate-50 h-fit rounded-md  duration-150  relative group">
             <FcClapperboard className="w-full h-auto  text-slate-600 " />
             <span className="text-sm text-slate-500 font-semibold px-2">
-              Cv
+              video4.mp4
             </span>
             <button className="absolute top-2 right-2 hidden group-hover:block">
               <BsThreeDots />
             </button>
           </div>
         ))}
-        {[...Array(5)].map(() => (
+        {[...Array(1)].map(() => (
           <div className="px-3   py-1 hover:bg-slate-50 h-fit rounded-md  duration-150  relative group">
             <FcDocument className="w-full h-auto  " />
             <span className="text-sm text-slate-500 font-semibold px-2">
-              camp.pdf
+              anisul.pdf
             </span>
             <button className="absolute top-2 right-2 hidden group-hover:block">
               <BsThreeDots />
             </button>
           </div>
         ))}
-        {[...Array(5)].map(() => (
+        {[...Array(1)].map(() => (
           <div className="px-3   py-1 hover:bg-slate-50 h-fit rounded-md  duration-150  relative group">
             <FcLandscape className="w-full h-auto border rounded-md bg-sky-100  " />
             <span className="text-sm text-slate-500 font-semibold px-2">
-              camp.pdf
+              photo.png{" "}
             </span>
             <button className="absolute top-2 right-2 hidden group-hover:block">
               <BsThreeDots />
             </button>
+          </div>
+        ))}{" "}
+        {[...Array(5)].map(() => (
+          <div className="px-3   h-fit      ">
+            <HiFolder className="w-full h-auto   text-slate-200 animate-pulse " />
+            <span className="text-sm text-slate-200 font-semibold px-2 ">
+              loading
+            </span>
           </div>
         ))}
       </div>
